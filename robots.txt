@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lindseyneu.github.io/coffee-study-guide/sitemap.xml
