@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iowa City Coffee Shops with Outlets | Hawkeye Grind Guide</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background-color: #f7fafc;
+        }
+        .disclaimer-banner {
+            background-color: #fff5f5;
+            color: #c53030;
+            border-bottom: 2px solid #feb2b2;
+            padding: 10px 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        header {
+            background-color: #1a202c;
+            color: #ffffff;
+            padding: 20px 15px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: #f6ad55;
+        }
+        header p {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+        }
+        nav {
+            background-color: #2d3748;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 4px;
+            display: inline-block;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        nav a:hover, nav a.active {
+            background-color: #dd6b20;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .content-block {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #1a202c;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #edf2f7;
+            color: #2d3748;
+        }
+        tr:hover {
+            background-color: #f7fafc;
+        }
+        .outlet-card {
+            border-left: 4px solid #38a169;
+            background-color: #f0fff4;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .outlet-card h3 {
+            color: #276749;
+            margin-bottom: 5px;
+        }
+        footer {
+            background-color: #1a202c;
+            color: #a0aec0;
+            padding: 20px 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
+        footer p {
+            margin-bottom: 8px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.4rem; }
+            nav a { display: block; margin: 5px 0; }
+            table, thead, tbody, th, td, tr { display: block; }
+            thead { display: none; }
+            tr { margin-bottom: 15px; border: 1px solid #e2e8f0; border-radius: 6px; }
+            td { text-align: right; padding-left: 50%; position: relative; }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="disclaimer-banner">
+        This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+    </div>
+
+    <header>
+        <h1>Hawkeye Grind Guide</h1>
+        <p>Iowa City Coffee Shops with Outlets & Charging Access</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="quiet-study-cafes.html">Quiet Cafes & Wi-Fi</a>
+        <a href="coffee-shops-with-outlets.html" class="active">Outlets & Charging</a>
+        <a href="study-spots-near-uiowa.html">Near UI Campus</a>
+    </nav>
+
+    <div class="container">
+        <section class="content-block">
+            <h2>Power Outlet Density & Seating Analysis</h2>
+            <p>Nothing disrupts a productive financial modeling or writing session faster than a dead laptop battery. We mapped downtown Iowa City coffee shops based on outlet accessibility, table-to-socket ratios, and power strip availability so you can keep your devices fully charged.</p>
+        </section>
+
+        <section class="content-block">
+            <h2>Coffee Shop Outlet Directory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coffee Shop</th>
+                        <th>Outlet Density</th>
+                        <th>Best Seating Area for Power</th>
+                        <th>USB Charging Available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Coffee Shop"><strong>Java House (Washington St)</strong></td>
+                        <td data-label="Outlet Density">High (8/10 tables)</td>
+                        <td data-label="Best Seating">Perimeter booths and rear counter bar</td>
+                        <td data-label="USB Available">Yes (Built-in wall ports)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Coffee Shop"><strong>KetoLab Coffee Co.</strong></td>
+                        <td data-label="Outlet Density">Very High (9/10 tables)</td>
+                        <td data-label="Best Seating">Central high-top communal table</td>
+                        <td data-label="USB Available">Yes (USB-C & Standard)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Coffee Shop"><strong>Cortado Mediterranean Cafe</strong></td>
+                        <td data-label="Outlet Density">Moderate (5/10 tables)</td>
+                        <td data-label="Best Seating">East wall small tables</td>
+                        <td data-label="USB Available">No (AC Plugs Only)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Coffee Shop"><strong>Sidekick Coffee & Books</strong></td>
+                        <td data-label="Outlet Density">Moderate (6/10 tables)</td>
+                        <td data-label="Best Seating">Window seating bench</td>
+                        <td data-label="USB Available">Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="content-block">
+            <h2>Top Recommended Power Spots</h2>
+
+            <div class="outlet-card">
+                <h3>1. Java House Downtown (211 E Washington St)</h3>
+                <p><strong>Power Setup:</strong> Almost every booth along the outer wall features dual AC electrical sockets. The central bar table has power strips built directly beneath the wooden counter rim. It is the most reliable spot downtown for charging multiple electronics at once.</p>
+            </div>
+
+            <div class="outlet-card">
+                <h3>2. KetoLab Coffee Co. (330 E Davenport St)</h3>
+                <p><strong>Power Setup:</strong> Designed with modern remote workers in mind, KetoLab features modern surge-protected outlets at every seat position, including USB-C fast charging ports. You will never have to fight for power access here.</p>
+            </div>
+        </section>
+
+        <section class="content-block">
+            <h2>Power Survival Guide for Students</h2>
+            <p>If you plan to study for longer than three hours, remember to pack a compact extension cord or multi-port adapter. During peak midterm exam weeks (October and March), wall-adjacent tables fill up by 9:00 AM across all downtown locations.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Hawkeye Grind Guide © 2026. Designed for Iowa City coffee enthusiasts and students.</p>
+        <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
+    </footer>
+
+</body>
+</html>
