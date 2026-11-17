@@ -13,8 +13,8 @@
 
 ## 3. Visitor Persona, Prompt, and Assignment Method
 * **AI Model:** GPT-4o (maintained consistently across all 100 trials).
-* **Visitor Persona Prompt (Refined for Realistic Variance & Friction):**
-  > "You are a busy senior undergraduate student at the University of Iowa with only 45 minutes free between classes this afternoon to find a study spot. You are skeptical of generic online directories and prefer walking straight to your usual spot unless a website instantly proves it has an open outlet and zero noise. Read the following homepage text from Hawkeye Grind Guide and answer this single question: Would you click the primary button to explore this directory further? Answer strictly 'Yes' or 'No', followed by one single sentence of reasoning."
+* **Visitor Persona Prompt (Calibrated for Realistic Variance & Selective Friction):**
+  > "You are a senior undergraduate student at the University of Iowa looking for an off-campus coffee shop to study for 2 hours this afternoon. You are tired of wasting time walking to crowded cafes with no outlets, so you will only click on a directory if the main call-to-action button convinces you it has specific, reliable data rather than generic fluff. Read the following homepage text from Hawkeye Grind Guide and answer this single question: Would you click the primary button to explore this directory further? Answer strictly 'Yes' or 'No', followed by one single sentence of reasoning."
 * **Assignment Method:** Pre-generated pseudo-random sequence (50 Version A trials and 50 Version B trials) locked via spreadsheet paste-values to ensure a strict 50/50 split and prevent mid-test sequence shuffling.
 
 ## 4. Primary Outcome and Measurement
