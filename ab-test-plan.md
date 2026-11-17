@@ -1,1 +1,30 @@
-A/B Test Plan: Hawkeye Grind Guide Homepage CTA1. Page and Tested ElementPage Tested: Homepage (index.html)Element Changed: The primary Call-to-Action (CTA) button text inside the main hero introduction section.Version A (Control): The existing CTA button text reads Find Your Perfect Study Spot.Version B (Variant): The updated CTA button text reads Browse Verified Quiet Cafes.2. Hypothesis and ReasoningHypothesis: Changing the homepage hero CTA text from a broad prompt ("Find Your Perfect Study Spot") to a specific, benefit-driven prompt ("Browse Verified Quiet Cafes") will significantly increase the proportion of AI visitors who state they would click through or contact the site directory.Reasoning: User persona research shows that students and remote professionals visiting study guides are often specifically trying to solve a pain point around ambient noise and finding distraction-free zones. A specific prompt sets immediate expectations and reduces cognitive friction compared to a generic call to action, leading to higher engagement.3. Visitor Persona, Prompt, and Assignment MethodAI Model: GPT-4o (or the designated consistent model and version used across all trials).Visitor Persona Prompt (Used identically in every trial):"You are an undergraduate student at the University of Iowa who needs a quiet place off-campus to study for upcoming finance exams for three hours this afternoon. Read the following homepage text from Hawkeye Grind Guide and answer this single question: Would you click the primary button to explore this directory further? Answer strictly 'Yes' or 'No', followed by one single sentence of reasoning."Assignment Method: Before running each trial, a pseudo-random number generator (e.g., Python random.randint(0, 1) or a coin flip) will be used to assign the trial to either Version A or Version B. Assignments will be logged beforehand in the raw data tracker to ensure a 50/50 split.4. Primary Outcome and MeasurementPrimary Outcome: Binary purchase/click intent decision ("Yes" vs. "No") recorded in response to the persona prompt.Measurement Scale: Count of "Yes" responses divided by total trials per version to calculate the conversion intent percentage.5. Sample Size and TimelineTarget Sample Size: 50 trials for Version A and 50 trials for Version B, totaling 100 trials minimum.Expected Completion Date: November 14, 2026 (launched ahead of the November 17 final launch deadline).6. Comparison and Success CriteriaStatistical Comparison: A two-proportion $z$-test will be conducted on completion to compare conversion intent rates between Version A and Version B.Success Support: Version B will be considered supportive of the hypothesis if it achieves a statistically higher "Yes" response rate at a significance level of $p < 0.10$, and the reasoning patterns indicate stronger user clarity regarding noise/study suitability.
+# A/B Test Plan: Hawkeye Grind Guide Homepage CTA
+
+## 1. Page and Tested Element
+* **Page Tested:** Homepage (`index.html` vs. `index-b.html`)
+* **Element Changed:** The primary Call-to-Action (CTA) button text inside the main hero introduction section.
+* **Version A (Control):** The existing CTA button text reads "Find Your Perfect Iowa City Study Environment".
+* **Version B (Variant):** The updated CTA button text reads "Browse Verified Quiet Cafes".
+* **SEO Protection:** Variant B (`index-b.html`) is shielded from indexing via `<meta name="robots" content="noindex, nofollow">` and exclusion from the sitemap.
+
+## 2. Hypothesis and Reasoning
+* **Hypothesis:** Changing the homepage hero CTA text from a broad prompt ("Find Your Perfect Iowa City Study Environment") to a specific, benefit-driven prompt ("Browse Verified Quiet Cafes") will significantly increase the proportion of AI simulated visitors who state they would click through to explore the directory.
+* **Reasoning:** User persona research shows that students visiting study guides under time constraints are specifically trying to solve a pain point around ambient noise and finding distraction-free zones. A specific prompt sets immediate expectations and reduces cognitive friction compared to a generic call to action, leading to higher engagement.
+
+## 3. Visitor Persona, Prompt, and Assignment Method
+* **AI Model:** GPT-4o (maintained consistently across all 100 trials).
+* **Visitor Persona Prompt (Refined for Realistic Variance & Friction):**
+  > "You are a busy senior undergraduate student at the University of Iowa with only 45 minutes free between classes this afternoon to find a study spot. You are skeptical of generic online directories and prefer walking straight to your usual spot unless a website instantly proves it has an open outlet and zero noise. Read the following homepage text from Hawkeye Grind Guide and answer this single question: Would you click the primary button to explore this directory further? Answer strictly 'Yes' or 'No', followed by one single sentence of reasoning."
+* **Assignment Method:** Pre-generated pseudo-random sequence (50 Version A trials and 50 Version B trials) locked via spreadsheet paste-values to ensure a strict 50/50 split and prevent mid-test sequence shuffling.
+
+## 4. Primary Outcome and Measurement
+* **Primary Outcome:** Binary click-intent decision ("Yes" vs. "No") recorded in response to the persona prompt.
+* **Measurement Scale:** Count of "Yes" responses divided by total trials per version ($n = 50$ each) to calculate the conversion intent percentage.
+
+## 5. Sample Size and Timeline
+* **Target Sample Size:** 50 trials for Version A and 50 trials for Version B, totaling 100 independent trials.
+* **Execution Timeline:** Data collection and logging finalized by November 18, 2026.
+
+## 6. Comparison and Success Criteria
+* **Statistical Comparison:** A two-proportion $z$-test will be conducted on completion to compare conversion intent rates between Version A and Version B ($p_A$ vs. $p_B$).
+* **Success Criteria:** Version B will be considered supportive of the hypothesis if it achieves a statistically higher "Yes" response rate at a significance level of $p < 0.10$, backed by qualitative reasoning patterns indicating stronger user clarity regarding noise and study suitability.
